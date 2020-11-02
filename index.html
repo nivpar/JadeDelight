@@ -192,7 +192,8 @@ function validate()
 				message += " Food will be delivered at " + time + ".";
 			}
 		}
-		alert(message);
+		if(alert(message)){}
+		else   window.location.reload(); 
 		return !err;
 	}
 
